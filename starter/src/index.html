@@ -9,23 +9,28 @@
   <body>
     <script src="index.js"></script>
 
-    <form>
-      <label for="lucky">Year lucky number:</label>
-      <input class="input lucky" type="text" id="lucky" name="lucky">
-      <label for="year">Year of birth:</label>
-      <input class="input year" type="text" id="year" name="year">
-      <label for="age">Your Age:</label>
-      <input class="input age" type="text" id="age" name="age">
-    </form>
+    <section class='section'>
+        <label for="inputsNumber">How many inputs do you want?</label>
+        <input class="input inputsNumber" type="number" id="inputsNumber" name="inputsNumber">
+        <button class="apply">Apply</button>
+    </section>
 
-    <section class="calculations">
-          <button type="button" class="button">Total</button>
+    <section class='section inputs'>
+      <p>INPUTS:</p>
+        <!-- <label for="lucky">Year lucky number:</label>
+        <input class="input lucky" type="number" id="lucky" name="lucky">
+        <label for="year">Year of birth:</label>
+        <input class="input year" type="number" id="year" name="year">
+        <label for="age">Your Age:</label>
+        <input class="input age" type="number" id="age" name="age"> -->
+    </section>
 
-          <div>Total: <span class="totalResult"></span></div>
+    <section class='section calculations'>
+          <button type="button" class="button">Calculate</button>
+          <div>Total:<span class="totalResult"></span></div>
           <div>Average: <span class="averageResult"></span></div>
           <div>Min: <span class="minResult"></span></div>
           <div>Max: <span class="maxResult"></span></div>
-
     </section>
 
   </body>
